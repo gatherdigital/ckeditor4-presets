@@ -35,11 +35,12 @@ case $1 in
 	basic) name="Basic" ;;
 	standard) name="Standard" ;;
 	full) name="Full" ;;
+	touchpoint) name="Touchpoint" ;;
 	*)
 		echo ""
 		echo "Usage:"
 		echo "$0 -v"
-		echo "$0 basic|standard|full [all] [-t]"
+		echo "$0 basic|standard|full|touchpoint [all] [-t]"
 		echo ""
 		exit 1
 		;;
