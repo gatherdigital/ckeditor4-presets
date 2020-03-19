@@ -112,6 +112,9 @@ java -jar ckbuilder/$CKBUILDER_VERSION/ckbuilder.jar --build ckeditor $target $s
 cp presets/$1-ckeditor-config.js $target/ckeditor/config.js
 cp presets/README.md $target/ckeditor/
 
+echo ""
+echo "Copying external plugins..."
+cp -r external_plugins/* $target/ckeditor/plugins/
 
 echo "Removing added plugins..."
 cd ckeditor
