@@ -71,6 +71,7 @@ var CKBUILDER_CONFIG = {
 		uploadimage: 1,
 		wsc: 1,
     wysiwygarea: 1,
-    ddf: 1
+    ddf: 1,
+    scayt: 1
 	}
 };
