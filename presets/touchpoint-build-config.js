@@ -58,7 +58,6 @@ var CKBUILDER_CONFIG = {
 		pastetext: 1,
 		removeformat: 1,
 		resize: 1,
-		scayt: 1,
 		showborders: 1,
 		sourcearea: 1,
 		specialchar: 1,
@@ -71,6 +70,7 @@ var CKBUILDER_CONFIG = {
 		undo: 1,
 		uploadimage: 1,
 		wsc: 1,
-		wysiwygarea: 1
+    wysiwygarea: 1,
+    ddf: 1
 	}
 };

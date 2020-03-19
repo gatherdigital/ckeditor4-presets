@@ -9,22 +9,15 @@ CKEDITOR.editorConfig = function( config ) {
 	// https://ckeditor.com/docs/ckeditor4/latest/api/CKEDITOR_config.html
 
 	// The toolbar groups arrangement, optimized for two toolbar rows.
-	config.toolbarGroups = [
-		{ name: 'clipboard',   groups: [ 'clipboard', 'undo' ] },
-		{ name: 'editing',     groups: [ 'find', 'selection', 'spellchecker' ] },
-		{ name: 'links' },
-		{ name: 'insert' },
-		{ name: 'forms' },
-		{ name: 'tools' },
-		{ name: 'document',	   groups: [ 'mode', 'document', 'doctools' ] },
-		{ name: 'others' },
-		'/',
-		{ name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ] },
-		{ name: 'paragraph',   groups: [ 'list', 'indent', 'blocks', 'align', 'bidi' ] },
-		{ name: 'styles' },
-		{ name: 'colors' },
-		{ name: 'about' }
+	config.language = 'en';
+	config.filebrowserFlashUploadUrl = "/ckeditor/attachment_files";
+	config.filebrowserImageUploadUrl = "/ckeditor/pictures";
+	config.filebrowserUploadUrl = "/ckeditor/attachment_files";
+	config.toolbar_GatherDigital = [
+	    ['Bold', 'Italic', '-', 'Format', '-', 'BulletedList', '-', 'Link', 'Unlink','-','Source', '-', 'Image', '-', 'DDF']
 	];
+	config.toolbar = 'GatherDigital';
+  config.height = 120;
 
 	// Remove some buttons provided by the standard plugins, which are
 	// not needed in the Standard(s) toolbar.
@@ -33,6 +26,10 @@ CKEDITOR.editorConfig = function( config ) {
 	// Set the most common block elements.
 	config.format_tags = 'p;h1;h2;h3;pre';
 
-	// Simplify the dialog windows.
-	config.removeDialogTabs = 'image:advanced;link:advanced';
+  config.forcePasteAsPlainText = true;
+	config.pasteFromWordRemoveFontStyles = true;
+	config.allowedContent = true;
+	config.disableNativeSpellChecker = false;
+
+	config.allowedContent = true;
 };
