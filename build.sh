@@ -47,7 +47,7 @@ case $1 in
 esac
 
 skip="-s"
-target="build/$versionFolder/$1"
+target="build/$1"
 
 if [ "$2" == "all" ]
 then
